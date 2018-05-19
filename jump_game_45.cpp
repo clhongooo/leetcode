@@ -9,6 +9,10 @@
 #include<vector>
 using namespace std;
 
+/**
+ * divide and conquer,but time limit exceeded.
+ */
+
 int jump(vector<int>& nums)
 {
 	if(nums.size() <= 1)
@@ -53,7 +57,7 @@ int jump(vector<int>& nums)
 		return min_value + 1;
 	}
 
-	return 999;
+	return 9999;
 }
 
 int main()
@@ -71,6 +75,6 @@ int main()
 	test_vec.push_back(1);
 	test_vec.push_back(0);
 	test_vec.push_back(0);
-	jump(test_vec);
+	cout << jump(test_vec);
 	return 0;
 }
