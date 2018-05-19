@@ -15,7 +15,8 @@ int jump(vector<int>& nums)
 	{
 		return 0;
 	}
-	if(nums.size() <= 2)
+
+	if(nums[0] >= nums.size() - 1)
 	{
 		return 1;
 	}
@@ -24,9 +25,14 @@ int jump(vector<int>& nums)
 	for(int i = 1; i <= nums[0]; i++)
 	{
 		vector<int> vec(nums.begin() + i, nums.end());
-		if(nums[0] >= vec.size())
+		if(vec[0] >= vec.size() - 1)
 		{
+			step_vec.push_back(1);
 			break;
+		}
+		else if(vec[0] == 0)
+		{
+			continue;
 		}
 		else
 		{
@@ -47,17 +53,24 @@ int jump(vector<int>& nums)
 		return min_value + 1;
 	}
 
-	return 1;
+	return 999;
 }
 
 int main()
 {
 	vector<int> test_vec;
-//	test_vec.push_back(1);
+	test_vec.push_back(5);
+	test_vec.push_back(9);
+	test_vec.push_back(3);
 	test_vec.push_back(2);
 	test_vec.push_back(1);
+	test_vec.push_back(0);
+	test_vec.push_back(2);
+	test_vec.push_back(3);
+	test_vec.push_back(3);
 	test_vec.push_back(1);
-	test_vec.push_back(1);
-	cout << jump(test_vec);
+	test_vec.push_back(0);
+	test_vec.push_back(0);
+	jump(test_vec);
 	return 0;
 }
