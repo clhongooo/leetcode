@@ -3,6 +3,10 @@
 
 using namespace std;
 
+/**
+ * boundary conditions!!!
+ */
+
 int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid)
 {
     int row = obstacleGrid.size();
