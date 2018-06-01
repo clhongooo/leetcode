@@ -32,24 +32,7 @@ void rotate(vector<vector<int>>& matrix)
 
 int main()
 {
-	vector<vector<int>> matrix;
-	
-	vector<int> mem_vec;
-	mem_vec.push_back(1);
-	mem_vec.push_back(2);
-	mem_vec.push_back(3);
-	matrix.push_back(mem_vec);
-	mem_vec.clear();
-	mem_vec.push_back(4);
-	mem_vec.push_back(5);
-	mem_vec.push_back(6);
-	matrix.push_back(mem_vec);
-	mem_vec.clear();
-	mem_vec.push_back(7);
-	mem_vec.push_back(8);
-	mem_vec.push_back(9);
-	matrix.push_back(mem_vec);
-
+	vector<vector<int>> matrix = {{1,2,3},{4,5,6},{7,8,9}};
 	rotate(matrix);
 
 	return 0;

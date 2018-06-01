@@ -62,19 +62,8 @@ int jump(vector<int>& nums)
 
 int main()
 {
-	vector<int> test_vec;
-	test_vec.push_back(5);
-	test_vec.push_back(9);
-	test_vec.push_back(3);
-	test_vec.push_back(2);
-	test_vec.push_back(1);
-	test_vec.push_back(0);
-	test_vec.push_back(2);
-	test_vec.push_back(3);
-	test_vec.push_back(3);
-	test_vec.push_back(1);
-	test_vec.push_back(0);
-	test_vec.push_back(0);
+	vector<int> test_vec = {5,9,3,2,1,0,2,3,3,1,0,0};
 	cout << jump(test_vec);
+	
 	return 0;
 }

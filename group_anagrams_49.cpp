@@ -48,24 +48,8 @@ vector<vector<string>> group_anagrams(vector<string>& strs)
 
 int main()
 {
-	vector<string> input_vec;
-	vector<vector<string>> output_vec;
-
-	input_vec.push_back("eat");
-	input_vec.push_back("tea");
-	input_vec.push_back("tan");
-	input_vec.push_back("ate");
-	input_vec.push_back("nat");
-	input_vec.push_back("bat");
+	vector<string> input_vec = {"eat","tea","tan","ate","nat","bat"};
+	group_anagrams(input_vec);
 	
-	output_vec = group_anagrams(input_vec);
-	for(auto iter : output_vec)
-	{
-		for(auto in_iter : iter)
-		{
-			cout << in_iter << " ";
-		}
-		cout << endl;
-	}
 	return 0;
 }

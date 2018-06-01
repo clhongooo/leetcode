@@ -57,9 +57,7 @@ int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid)
 
 int main()
 {
-    vector<int> row = {1};
-    vector<vector<int>> vec;
-    vec.push_back(row);
+    vector<vector<int>> vec = {{1}};
     cout << uniquePathsWithObstacles(vec);
     return 0;
 }
