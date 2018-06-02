@@ -5,6 +5,10 @@
 
 using namespace std;
 
+/**
+ * it spends space to decrease the time that this program takes.
+ * /
+
 vector<vector<int>> threeSum(vector<int>& nums) 
 {
     set<vector<int>> result_set;
