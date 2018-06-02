@@ -6,8 +6,8 @@
 using namespace std;
 
 /**
- * it spends space to decrease the time that this program takes.
- * /
+ * it spends space to decrease the time that 
+ */
 
 vector<vector<int>> threeSum(vector<int>& nums) 
 {
